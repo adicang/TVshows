@@ -1,0 +1,21 @@
+.img-single-show{
+    margin: auto;
+    display: block;
+    width: 65%;
+}
+
+.show-description{
+    font-size: 20px;
+}
+
+.btn-full-episodes{
+    display: block!important;
+    margin: auto!important;
+    margin-top: 30px!important;
+}
+
+.show-title{
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+}

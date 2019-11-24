@@ -1,0 +1,78 @@
+.single-show-item-card{
+    margin: 6px;
+    text-align: left;
+    width: 210px;
+    color: #838383;
+     font-family: 'Blinker'! important;
+}
+
+.img-card-show-item-card:hover {
+     -webkit-box-shadow: 9px -9px 6px -7px rgba(105,101,105,1);
+-moz-box-shadow: 9px -9px 6px -7px rgba(105,101,105,1);
+box-shadow: 9px -9px 6px -7px rgba(105,101,105,1);
+}
+
+.div-no-image:hover {
+     -webkit-box-shadow: 9px -9px 6px -7px rgba(105,101,105,1);
+-moz-box-shadow: 9px -9px 6px -7px rgba(105,101,105,1);
+box-shadow: 9px -9px 6px -7px rgba(105,101,105,1);
+}
+
+.icon-no-image-div{
+    width: 150px;
+    margin-top: 25px;
+}
+
+.link-to-single-show-page{
+    text-decoration: none;
+}
+
+.link-to-single-show-page:hover {
+    text-decoration: none;
+}
+
+.img-card-show-item-card{
+    border-radius: 10px;
+}
+
+.show-cards-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search-bar{
+    width: 340px;
+    margin: auto;
+    font-size: 17px!important;
+}
+
+.div-no-image{
+    width: 210px;
+    height: 295px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.div-no-image:hover{
+    text-decoration: none;
+}
+
+.name-and-year:hover {
+    text-decoration: none;
+}
+
+
+a {
+
+    text-decoration: none;
+}
+
+
+a:hover
+{
+
+     text-decoration:none;
+     cursor:pointer;
+}
+
