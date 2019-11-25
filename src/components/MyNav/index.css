@@ -1,9 +1,25 @@
-.nav-item{
-    color: white!important;
-     font-family: 'Blinker'! important;
+.navbar-brand-title {
+	color: white!important;
+	font-family: 'Blinker'! important;
 }
 
-.navbar-brand-title{
-    color: white!important;
-     font-family: 'Blinker'! important;
+.fav-nav-item {
+	margin-right: 15px;
+	color: white!important;
+	font-family: 'Blinker'! important;
+}
+
+.fav-nav-item:hover {
+	text-decoration: none;
+	color: #838383!important;
+}
+
+@media only screen and (max-width: 768px) {
+	.navbar-brand-title {
+		font-size: 20px!important;
+	}
+	.fav-nav {
+		font-size: 15px;
+		text-align: center;
+	}
 }

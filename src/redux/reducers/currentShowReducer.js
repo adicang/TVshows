@@ -2,6 +2,7 @@ const initialState = {
     showId: 0,
     showName: "",
     showImg: "",
+    showRating: 0,
     isFavorite: false
 }
 

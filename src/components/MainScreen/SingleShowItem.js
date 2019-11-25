@@ -1,66 +1,85 @@
-import React from 'react';
-import { Grid, Card, Container } from 'semantic-ui-react';
-import './index.css';
+import React from "react";
 import { Link } from "react-router-dom";
-import icon from "../../assets/logo192.png";
-import { createShowObject } from '../../helpers/createShowObject';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+
+import { createShowObject } from "../../helpers/createShowObject";
 import fetchShow from "../../redux/actions/fetchShow";
 
-
-
+import icon from "../../assets/logo192.png";
+import { Card } from "semantic-ui-react";
+import "./index.css";
 
 class SingleShowItem extends React.Component {
+  constructor() {
+    super();
 
-    constructor() {
-        super();
-
-        this.returnYearFromDate = this.returnYearFromDate.bind(this);
-         this.onclickHandler = this.onclickHandler.bind(this);
+    this.returnYearFromDate = this.returnYearFromDate.bind(this);
+    this.onclickHandler = this.onclickHandler.bind(this);
+    this.checkIfFavorite = this.checkIfFavorite.bind(this);
   }
 
-    returnYearFromDate(date){
-        let res = date;
-        if(res){
-            res = date.substring(0, 4);
-        }
-        return res;
+  returnYearFromDate(date) {
+    let res = date;
+    if (res) {
+      res = date.substring(0, 4);
     }
+    return res;
+  }
 
-    onclickHandler(){
-        let showObj = createShowObject(this.props.id, this.props.name, this.props.image, false);
-        this.props.fetchShow(showObj);
+  onclickHandler() {
+    let showObj = createShowObject(
+      this.props.id,
+      this.props.name,
+      this.props.image,
+      this.props.rating,
+      this.checkIfFavorite(this.props.id)
+    );
+    this.props.fetchShow(showObj);
+  }
+
+  checkIfFavorite(showId) {
+    let favoritesArr = this.props.favoritesArray;
+    for (let i = 0; i < favoritesArr.length; i++) {
+      if (favoritesArr[i].showId === showId) {
+        return true;
+      }
     }
+    return false;
+  }
 
+  render() {
+    return (
+      <Link
+        to="/singleShow"
+        className="link-to-single-show-page"
+        onClick={this.onclickHandler}
+      >
+        <div className="single-show-item-card">
+          {this.props.image ? (
+            <img
+              src={this.props.image}
+              alt="show-image"
+              className="img-card-show-item-card"
+            />
+          ) : (
+            <div className="div-no-image">
+              <h3>{this.props.name} </h3>
+              <img
+                src={icon}
+                className="icon-no-image-div"
+                alt="no-show-image"
+              />
+            </div>
+          )}
 
-
-    render(){
-        return(
-            <Link to="/singleShow" className="link-to-single-show-page" onClick={this.onclickHandler}>
-                <div className="single-show-item-card">
-                    {this.props.image?
-                        <img
-                        src={this.props.image}
-                        alt="show-image"
-                        className="img-card-show-item-card"
-                        />
-                    :
-                        <div className="div-no-image">
-                            <h3>{this.props.name} </h3>
-                            <img
-                                src={icon}
-                                className="icon-no-image-div"
-                                alt="no-show-image"
-                            />
-                        </div>
-                    }
-
-                    <p className="name-and-year">{this.props.name} ({this.returnYearFromDate(this.props.year)})</p>
-                </div>
-            </Link>
-        )
-    }
+          <p className="name-and-year">
+            {this.props.name} ({this.returnYearFromDate(this.props.year)})
+          </p>
+        </div>
+      </Link>
+    );
+  }
 }
 
 function matchDispatchToProps(dispatch) {
@@ -72,9 +91,10 @@ function matchDispatchToProps(dispatch) {
   );
 }
 
-export default connect(null, matchDispatchToProps)(SingleShowItem);
+function mapStateToProps(state) {
+  return {
+    favoritesArray: state.favorites
+  };
+}
 
-
-
-
-
+export default connect(mapStateToProps, matchDispatchToProps)(SingleShowItem);

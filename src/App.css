@@ -1,8 +1,22 @@
 .App {
-  background-color: #081118;
-    color: #838383;
-    min-height: 100vh;
-    font-family: 'Blinker'! important;
+	background-color: #081118;
+	color: #838383;
+	min-height: 100vh;
+	font-family: 'Blinker'! important;
 }
 
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Blinker'! important;
+}
 
+@media only screen and (max-width: 768px) {
+	h1,
+	h2,
+	h3,
+	h4 {
+		text-align: center;
+	}
+}
