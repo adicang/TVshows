@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/tv-show/static/css/main.4cff0263.chunk.css",
+    "main.js": "/tv-show/static/js/main.c89901ff.chunk.js",
+    "main.js.map": "/tv-show/static/js/main.c89901ff.chunk.js.map",
+    "runtime-main.js": "/tv-show/static/js/runtime-main.bb86ce37.js",
+    "runtime-main.js.map": "/tv-show/static/js/runtime-main.bb86ce37.js.map",
+    "static/css/2.162bea16.chunk.css": "/tv-show/static/css/2.162bea16.chunk.css",
+    "static/js/2.1c3c3067.chunk.js": "/tv-show/static/js/2.1c3c3067.chunk.js",
+    "static/js/2.1c3c3067.chunk.js.map": "/tv-show/static/js/2.1c3c3067.chunk.js.map",
+    "index.html": "/tv-show/index.html",
+    "precache-manifest.db3184a14bd2bfe13b18b4bf9beee036.js": "/tv-show/precache-manifest.db3184a14bd2bfe13b18b4bf9beee036.js",
+    "service-worker.js": "/tv-show/service-worker.js",
+    "static/css/2.162bea16.chunk.css.map": "/tv-show/static/css/2.162bea16.chunk.css.map",
+    "static/css/main.4cff0263.chunk.css.map": "/tv-show/static/css/main.4cff0263.chunk.css.map",
+    "static/media/semantic.min.css": "/tv-show/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/logo192.png": "/tv-show/static/media/logo192.fcf44269.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb86ce37.js",
+    "static/css/2.162bea16.chunk.css",
+    "static/js/2.1c3c3067.chunk.js",
+    "static/css/main.4cff0263.chunk.css",
+    "static/js/main.c89901ff.chunk.js"
+  ]
+}
