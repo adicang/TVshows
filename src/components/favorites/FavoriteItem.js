@@ -61,7 +61,7 @@ class FavoriteItem extends Component {
     const { redirect } = this.state;
 
     if (redirect) {
-      return <Redirect to="/singleShow" />;
+      return <Redirect to="/TVshows/singleShow" />;
     }
 
     return (

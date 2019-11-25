@@ -6,7 +6,7 @@ import CastItem from "./CastItem";
 
 import { Row } from "react-bootstrap";
 import "./index.css";
-import Fade from "react-reveal/Fade";
+
 
 class Cast extends Component {
   constructor() {
@@ -17,7 +17,7 @@ class Cast extends Component {
   }
 
   componentDidMount() {
-    let castResult = fetch(showCastEndPoint(this.props.currShow.showId))
+    fetch(showCastEndPoint(this.props.currShow.showId))
       .then(res => res.json())
       .then(data => this.displayCast(data));
   }

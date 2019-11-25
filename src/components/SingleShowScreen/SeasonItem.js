@@ -1,16 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
 
-import fetchShow from "../../redux/actions/fetchShow";
 import { getEpisodesEndPoint } from "../../helpers/createEndPoints";
 import EpisodeItem from "./EpisodeItem";
 
-import icon from "../../assets/logo192.png";
-import anonymousImg from "../../assets/anonymous.png";
 import { Row } from "react-bootstrap";
-import { Grid, Container } from "semantic-ui-react";
+import { Container } from "semantic-ui-react";
 import Fade from "react-reveal/Fade";
 import "./index.css";
 
@@ -32,7 +27,7 @@ class SeasonItem extends React.Component {
   }
 
   componentDidMount() {
-    let episodedResult = fetch(getEpisodesEndPoint(this.props.currShow.showId))
+    fetch(getEpisodesEndPoint(this.props.currShow.showId))
       .then(res => res.json())
       .then(data => this.displayEpisodes(data._embedded.episodes));
   }

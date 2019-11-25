@@ -7,14 +7,11 @@ import { Navbar, Nav } from "react-bootstrap";
 import "./index.css";
 
 class MyNav extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
       <Navbar expand="lg" className="navbar-dark">
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/TVshows">
           <Header as="h1">
             <img src={icon} alt="app-icon" />
             <Header.Content className="navbar-brand-title">
@@ -25,7 +22,7 @@ class MyNav extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Link to="/favorites" className="fav-nav-item">
+            <Link to="/TVshows/favorites" className="fav-nav-item">
               <h2 className="fav-nav">Favorites</h2>
             </Link>
           </Nav>

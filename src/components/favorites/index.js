@@ -28,7 +28,7 @@ class Favorites extends Component {
           <div className="no-fav-wrapper">
             <Fade top>
               <h1 className="no-fav-header">No Items On Favorites</h1>
-              <Link to="/">
+              <Link to="/TVshows">
                 <Button className="no-fav-button">
                   Click here and search new TV shows
                 </Button>

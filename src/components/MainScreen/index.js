@@ -3,7 +3,6 @@ import React from "react";
 import { searchShowEndPoint } from "../../helpers/createEndPoints";
 import SingleShowItem from "./SingleShowItem";
 
-import swal from "sweetalert";
 import { Grid, Container, Card, Input } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 import Bounce from "react-reveal/Bounce";
@@ -23,7 +22,7 @@ class MainScreen extends React.Component {
   handleSearchChange(event) {
     this.setState({ seacrhQuery: event.target.value });
 
-    let showsResult = fetch(searchShowEndPoint(event.target.value))
+    fetch(searchShowEndPoint(event.target.value))
       .then(res => res.json())
       .then(data => this.displayShows(data));
   }

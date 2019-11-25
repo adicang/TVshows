@@ -5,7 +5,6 @@ import { getSeasonsEndPoint } from "../../helpers/createEndPoints";
 import SeasonItem from "./SeasonItem";
 
 import { Row, Container } from "react-bootstrap";
-import Fade from "react-reveal/Fade";
 import "./index.css";
 
 class Cast extends Component {
@@ -17,7 +16,7 @@ class Cast extends Component {
   }
 
   componentDidMount() {
-    let seasonsResult = fetch(getSeasonsEndPoint(this.props.currShow.showId))
+    fetch(getSeasonsEndPoint(this.props.currShow.showId))
       .then(res => res.json())
       .then(data => this.displaySeasons(data));
   }

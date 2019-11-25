@@ -7,7 +7,6 @@ import { createShowObject } from "../../helpers/createShowObject";
 import fetchShow from "../../redux/actions/fetchShow";
 
 import icon from "../../assets/logo192.png";
-import { Card } from "semantic-ui-react";
 import "./index.css";
 
 class SingleShowItem extends React.Component {
@@ -51,7 +50,7 @@ class SingleShowItem extends React.Component {
   render() {
     return (
       <Link
-        to="/singleShow"
+        to="/TVshows/singleShow"
         className="link-to-single-show-page"
         onClick={this.onclickHandler}
       >
@@ -59,7 +58,7 @@ class SingleShowItem extends React.Component {
           {this.props.image ? (
             <img
               src={this.props.image}
-              alt="show-image"
+              alt="show-img"
               className="img-card-show-item-card"
             />
           ) : (
@@ -68,7 +67,7 @@ class SingleShowItem extends React.Component {
               <img
                 src={icon}
                 className="icon-no-image-div"
-                alt="no-show-image"
+                alt="no-show-img"
               />
             </div>
           )}

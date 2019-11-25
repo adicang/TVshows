@@ -16,11 +16,10 @@ import Episodes from "./Episodes";
 
 import icon from "../../assets/logo192.png";
 import ScrollTop from "react-scrolltop-button";
-import swal from "sweetalert";
 import stripHtml from "string-strip-html";
 import Loader from "react-loader-spinner";
 import { Container, Button } from "semantic-ui-react";
-import { Row, Card, Col, ListGroup } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import "./index.css";
 
 class SingleShowScreen extends Component {
@@ -58,9 +57,9 @@ class SingleShowScreen extends Component {
 
   componentDidMount() {
     this.props.fetching();
-    let showsResult = fetch(ShowByIdEndPoint(this.props.currShow.showId))
+    fetch(ShowByIdEndPoint(this.props.currShow.showId))
       .then(res => {
-        if (res.status == 200) {
+        if (res.status === 200) {
           this.props.fetchSucceed();
           return res.json();
         } else {
@@ -93,12 +92,14 @@ class SingleShowScreen extends Component {
                 <img
                   src={this.props.currShow.showImg}
                   className="img-single-show"
+                  alt="show-img"
                 />
               ) : (
                 <div className="div-no-image margin-auto">
                   <img
                     src={icon}
                     className="icon-no-image-div img-single-show"
+                    alt="show-no-img"
                   />
                 </div>
               )}

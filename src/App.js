@@ -1,7 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
 
 import MyNav from "./components/MyNav";
 import MainScreen from "./components/MainScreen";
@@ -17,9 +15,9 @@ class App extends React.Component {
         <div className="App">
           <MyNav />
           <Switch>
-            <Route path="/" exact component={MainScreen}></Route>
-            <Route path="/singleShow" exact component={SingleShowScreen}></Route>
-            <Route path="/favorites" exact component={favorites}></Route>
+            <Route path={process.env.PUBLIC_URL +"/"}  exact component={MainScreen}></Route>
+            <Route path={process.env.PUBLIC_URL +"/singleShow"} exact  component={SingleShowScreen}></Route>
+            <Route path={process.env.PUBLIC_URL +"/favorites"} exact component={favorites}></Route>
           </Switch>
           <footer></footer>
         </div>

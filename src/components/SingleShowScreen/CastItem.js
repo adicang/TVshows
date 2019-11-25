@@ -1,14 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
 
-import { createShowObject } from "../../helpers/createShowObject";
-import fetchShow from "../../redux/actions/fetchShow";
-
-import icon from "../../assets/logo192.png";
 import anonymousImg from "../../assets/anonymous.png";
-import { Col, Image } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import "./index.css";
 
 class CastItem extends React.Component {
