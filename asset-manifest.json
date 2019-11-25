@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/TVshows/static/css/main.4cff0263.chunk.css",
-    "main.js": "/TVshows/static/js/main.78f14765.chunk.js",
-    "main.js.map": "/TVshows/static/js/main.78f14765.chunk.js.map",
+    "main.js": "/TVshows/static/js/main.2df3a6f9.chunk.js",
+    "main.js.map": "/TVshows/static/js/main.2df3a6f9.chunk.js.map",
     "runtime-main.js": "/TVshows/static/js/runtime-main.7efc1790.js",
     "runtime-main.js.map": "/TVshows/static/js/runtime-main.7efc1790.js.map",
     "static/css/2.4d7aee6d.chunk.css": "/TVshows/static/css/2.4d7aee6d.chunk.css",
     "static/js/2.edcd24b9.chunk.js": "/TVshows/static/js/2.edcd24b9.chunk.js",
     "static/js/2.edcd24b9.chunk.js.map": "/TVshows/static/js/2.edcd24b9.chunk.js.map",
     "index.html": "/TVshows/index.html",
-    "precache-manifest.a1ceb555aef35859d7e535e13f0b7af1.js": "/TVshows/precache-manifest.a1ceb555aef35859d7e535e13f0b7af1.js",
+    "precache-manifest.4d015911307f7c695a44e0566c6a1d3b.js": "/TVshows/precache-manifest.4d015911307f7c695a44e0566c6a1d3b.js",
     "service-worker.js": "/TVshows/service-worker.js",
     "static/css/2.4d7aee6d.chunk.css.map": "/TVshows/static/css/2.4d7aee6d.chunk.css.map",
     "static/css/main.4cff0263.chunk.css.map": "/TVshows/static/css/main.4cff0263.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.4d7aee6d.chunk.css",
     "static/js/2.edcd24b9.chunk.js",
     "static/css/main.4cff0263.chunk.css",
-    "static/js/main.78f14765.chunk.js"
+    "static/js/main.2df3a6f9.chunk.js"
   ]
 }
