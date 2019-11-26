@@ -57,7 +57,11 @@ class SeasonItem extends React.Component {
   render() {
     let showEpisodes;
     if (this.state.showEpisodes) {
-      showEpisodes = { display: "flex" };
+        if (window.innerWidth > 767){
+            showEpisodes = { display: "flex" };
+        }else{
+            showEpisodes = { display: "block" };
+        }
     } else {
       showEpisodes = { display: "none" };
     }

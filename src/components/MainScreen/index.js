@@ -3,7 +3,8 @@ import React from "react";
 import { searchShowEndPoint } from "../../helpers/createEndPoints";
 import SingleShowItem from "./SingleShowItem";
 
-import { Grid, Container, Card, Input } from "semantic-ui-react";
+import { Grid, Card, Input } from "semantic-ui-react";
+import { Container } from "react-bootstrap";
 import "semantic-ui-css/semantic.min.css";
 import Bounce from "react-reveal/Bounce";
 import "./index.css";

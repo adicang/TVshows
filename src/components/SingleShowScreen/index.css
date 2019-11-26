@@ -109,6 +109,7 @@
 	margin: 5px;
 	text-align: center;
 	margin-top: 10px;
+    margin: auto;
 }
 
 .person-name {
@@ -226,4 +227,7 @@
 		display: block;
 		margin: auto;
 	}
+    .season-and-episode {
+	width: auto;
+}
 }
