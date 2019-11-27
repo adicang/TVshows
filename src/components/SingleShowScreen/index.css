@@ -55,6 +55,7 @@
 	background-color: #803583!important;
 	border-color: #803583!important;
 	color: white!important;
+    font-family: 'Blinker'! important;
 }
 
 .btn-go-back:hover {
@@ -213,10 +214,8 @@
 		width: auto;
 	}
 	.btn-go-back {
-		margin-left: 0px!important;
-		margin-bottom: 10px!important;
+        margin: 20px auto!important;
 		width: 180px!important;
-		margin: auto!important;
 	}
 	.show-title,
 	.show-description {
@@ -228,6 +227,16 @@
 		margin: auto;
 	}
     .season-and-episode {
-	width: auto;
-}
+	   width: auto;
+    }
+    .button-up-arrow {
+	   font-size: 20px!important;
+    }
+    .episodes-title{
+        margin-top: 30px!important;
+    }
+    .cast-title{
+        margin-top: 30px!important;
+    }
+
 }
